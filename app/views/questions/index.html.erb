@@ -1,0 +1,4 @@
+<h1>Questions</h1>
+<% @questions.each do |question| %>
+  <p> <%= link_to question.title, post_path(question.id) %> </p>
+<% end %>
