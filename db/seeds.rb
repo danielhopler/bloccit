@@ -44,17 +44,17 @@ end
 
 #Create admin user
 admin = User.create!(
-  name:         'Admin User',
-  email:        'admin@example.com',
-  password:     'helloworld',
-  role:         'admin'
+  name: 'Admin User',
+  email: 'admin@example.com',
+  password: 'password',
+  role: 'admin'
 )
 
 #Create a member
 member = User.create!(
-  name:         'Member User',
-  email:        'member@example.com',
-  password:     'helloworld'
+  name:  'Member User',
+  email: 'member@example.com',
+  password: 'password'
 )
 
 puts "Seed finished"
@@ -63,3 +63,4 @@ puts "#{Topic.count} topics created"
 puts "#{Post.count} posts created"
 puts "#{Comment.count} comments created"
 puts "#{Vote.count} votes created"
+puts "#{User.admin.count} admin user created"
