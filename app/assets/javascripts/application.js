@@ -23,4 +23,7 @@ blocmetrics.report = function(eventName){
   request.send(JSON.stringify(event));
 };
 
-<script>blocmetrics.report('about page loaded');</script>
+$('.user_sign_up').click(function() {
+    console.log("testing");
+    blocmetrics.report("user signed up");
+ });
