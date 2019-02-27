@@ -61,8 +61,8 @@ class TopicsController < ApplicationController
    end
 
    def authorize_user
-     unless current_user.admin? || current_user.member?
-       flash[:alert] = "You must sign up to do that."
+     unless current_user.admin?
+       flash[:alert] = "You must be an admin to do that."
        redirect_to topics_path
      end
    end
