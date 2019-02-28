@@ -9,15 +9,15 @@
 
 <div class="row">
   <div class= "col-md-4">
-    <h2>Solves world hunger</h2>
-    <p>Bloccit will deliver food and water to those in need, all over the world.</p>
+    <h2><i class="glyphicon glyphicon-pencil"></i>&nbsp;Bloccit Features</h2>
+    <p>Post, comment, vote, or favorite the content of others! Want us to add a new topic? Just let us know!</p>
   </div>
-  <div class= "col-md-4">
-    <h2>Eliminates poverty</h2>
-    <p>Bloccit will deliver money and education to those in need, all over the world.</p>
+  <div class="col-md-4">
+    <h2><i class="glyphicon glyphicon-heart"></i>&nbsp; Popular Posts</h2>
+    <%= render "posts/popular_posts" %>
   </div>
-  <div class= "col-md-4">
-    <h2>Makes you better looking</h2>
-    <p>Bloccit will make you better looking: it's scientifically proven to make men look like Ryan Gosling.</p>
+  <div class="col-md-4">
+    <h2><i class="glyphicon glyphicon-comment"></i>&nbsp; Recent Comments</h2>
+    <%= render "comments/recent_comments" %>
   </div>
 </div>

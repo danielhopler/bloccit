@@ -1,0 +1,15 @@
+<% @popular_posts.each  do |post| %>
+  <div class="media">
+    <div class="gravatar">
+      <%= image_tag post.user.avatar_url(48) %>
+    </div>
+    <div class="media-body">
+      <h4 class="media-heading">
+        <%= link_to post.title, topic_post_path(post.topic, post) %>
+      </h4>
+      <small>
+        <%= pluralize(post.points, 'point') %> | <%= pluralize(post.comments_count, 'comment') %> | <%= link_to post.topic.name, post.topic %>
+      </small>
+    </div>
+  </div>
+<% end %>
